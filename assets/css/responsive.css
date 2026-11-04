@@ -1,0 +1,77 @@
+/* Responsive layouts: desktop is the base (style.css). Tablet below 1020px, phone below 760px. */
+
+@media (max-width:1100px){
+  .logo .full{display:none}
+  .logo .short{display:inline}
+}
+
+/* ===== Tablet ===== */
+@media (max-width:1020px){
+  .hero-grid{gap:10px}
+  .skills,.services{grid-template-columns:repeat(2,1fr)}
+  .tm{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1fr}
+  .links a{padding:8px 10px;font-size:13px}
+  .nav .lg{display:none}
+  .faqwrap{grid-template-columns:1fr}
+  .faqwrap .head{position:static;margin-bottom:12px}
+  .tech{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr}
+}
+
+/* ===== Phone ===== */
+@media (max-width:760px){
+  body{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+  .logo .full{display:inline}
+  .logo .short{display:none}
+  .links,.nav>.btn{display:none}
+  .nav{padding:6px 6px 6px 14px}
+  .tools{margin-left:auto}
+  .pal{right:0}
+
+  /* bottom navbar */
+  .bnav{display:grid}
+  .sbg{display:block}
+  .sheet{display:block}
+  .fab{bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .fab.up{bottom:calc(152px + env(safe-area-inset-bottom,0px))}
+  .top{bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .toast{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+
+  .hero{padding-top:104px;padding-bottom:50px;min-height:0}
+  .cue{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .stage{max-width:380px;margin:10px auto 0;order:-1}
+  .btn{padding:13px 20px}
+  .btn.sm{padding:10px 16px}
+  .skills,.skills.four,.projects,.services,.tm,.two,.contact,.cgrid,.certs,.steps{grid-template-columns:1fr}
+  .tech{grid-template-columns:repeat(3,1fr);gap:10px}
+  .tk{padding:16px 6px;font-size:13px}
+  .stats{gap:10px}
+  .stat{padding:14px 12px}
+  .tl{padding-left:28px}
+  .job{padding:22px}
+  .job::before{left:-33px}
+  .tl::before{left:2px}
+  .chip{border-radius:14px}
+  .rv[data-a="left"],.rv[data-a="right"]{transform:translateY(34px)}
+  .qb{padding:18px;font-size:16px}
+  .ans p{padding:0 18px 20px}
+  .band .bolt{width:64px}
+  .fbtns{grid-template-columns:1fr}
+  .foot{flex-direction:column}
+  .phead{padding-top:104px}
+}
+
+@media (max-width:360px){
+  .sgrid{gap:8px}
+  .tile{font-size:12px}
+  .bnav a,.bnav button{font-size:10.5px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1!important;transform:none!important}
+}
