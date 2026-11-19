@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Misbah;Maruf Al;;;
+FN:Maruf Al Misbah
+TITLE:Full Stack Developer and UI/UX Designer
+TEL;TYPE=CELL:+8801844876116
+EMAIL;TYPE=INTERNET:almisbahmaruf@gmail.com
+URL:https://marufalmisbah.github.io/marufProtfolio/
+ADR;TYPE=HOME:;;Jashore;;;;Bangladesh
+X-SOCIALPROFILE;type=github:https://github.com/marufalmisbah
+X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/almisbahmaruf
+NOTE:Freelance web developer and designer
+END:VCARD
